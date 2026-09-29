@@ -1,0 +1,59 @@
+<!doctype html><html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Accueil • ASTRALYX</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="nav">
+  <a class="brand" href="index.html"><img src="https://cdn.discordapp.com/attachments/1522089379592667186/1554254267924090880/9CD0C5F2-FA55-4E1C-B644-98DA8FF0B6B2.png?ex=6abc3796&is=6abae616&hm=e4596a3c00d6642b1cb40c5d2c079f1ee46d09de384a50ea6e6d46214b25c0e5&" alt="Logo Astralyx"><span>ASTRALYX</span></a>
+  <button class="menu" aria-label="Ouvrir le menu">☰</button>
+  <nav>
+    <a href="index.html">Accueil</a><a href="index.html#apropos">À propos</a>
+    <a href="evenements.html">Événements</a><a href="equipe.html">Équipe</a>
+    <a href="partenaires.html">Partenaires</a>
+  </nav>
+</header>
+<nav class="v13-menu" id="v13Menu">
+ <a href="index.html">Accueil</a>
+ <a href="evenements.html">Événements</a>
+ <a href="equipe.html">Équipe</a>
+ <a href="partenaires.html">Partenaires</a>
+ <a href="galerie.html">Galerie</a>
+ <a href="rejoindre.html">Rejoindre</a>
+</nav>
+<main>
+<section id="accueil" class="home-hero-v14">
+  <div class="home-hero-v14-inner">
+    <p class="eyebrow">COMMUNAUTÉ • VRCHAT • ÉVÉNEMENTS</p>
+    <h1>Bienvenue dans <span>ASTRALYX</span></h1>
+    <p class="lead">Un espace francophone pour se retrouver, découvrir de nouvelles personnes et vivre des événements sur VRChat.</p>
+    <div class="actions">
+      <a class="btn primary" href="rejoindre.html">Nous rejoindre</a>
+      <a class="btn ghost" href="evenements.html">Découvrir les événements</a>
+    </div>
+  </div>
+</section>
+<section id="apropos" class="section reveal">
+  <p class="kicker">À PROPOS</p>
+  <h2>Plus qu'un groupe.<br><span>Une communauté.</span></h2>
+  <p class="copy">ASTRALYX rassemble une communauté francophone autour d'instances VRChat, d'événements, de mini-jeux, de roleplay et de collaborations. Le but : créer des moments mémorables dans une ambiance accueillante.</p>
+  <div class="stats">
+    <div><b>300+</b><small>Membres</small></div>
+    <div><b>VRChat</b><small>Communauté</small></div>
+    <div><b>Événements</b><small>Réguliers</small></div>
+    <div><b>15+</b><small>Âge minimum</small></div>
+  </div>
+</section>
+<section class="section v13-home-links">
+<p class="kicker">EXPLORER ASTRALYX</p><h2>Découvre <span>notre univers.</span></h2>
+<div class="v13-grid">
+<a href="evenements.html">📅 <b>Événements</b><small>Nos prochaines soirées</small></a>
+<a href="equipe.html">👑 <b>Équipe</b><small>La direction ASTRALYX</small></a>
+<a href="partenaires.html">🤝 <b>Partenaires</b><small>Nos communautés partenaires</small></a>
+<a href="galerie.html">📸 <b>Galerie</b><small>Les moments ASTRALYX</small></a>
+</div></section></main><footer><span>ASTRALYX</span><small>Communauté VRChat • 2026</small></footer>
+<script>
+(function(){
+ const menu=document.getElementById('v13Menu');
+ const candidates=[...document.querySelectorAll('button, .hamburger, .menu-toggle')];
+ const btn=candidates.find(x => /menu|☰/i.test((x.getAttribute('aria-label')||'')+(x.textContent||''))) || candidates[0];
+ if(btn&&menu) btn.addEventListener('click',()=>menu.classList.toggle('open'));
+})();
+</script></body></html>
